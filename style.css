@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    background-color: rgb(3, 3, 26);
+    color: white;
+    padding-top: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+
+/*header styling*/
+header{
+    background-image: linear-gradient(to right, rgb(218, 65, 149), rgb(218, 65, 149), rgb(220, 117, 174));
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-header{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-icon{
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.open{
+    display: none;
+}
+
+.bar{
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    margin: 3px;
+}
+
+.close{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+nav{
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul a{
+    margin: 10px;
+}
+
+ul a:hover{
+    color: rgb(240, 240, 86);
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid white;
+}
+
+.login{
+    background-color: rgb(255, 192, 246);
+    color: rgb(218, 65, 149);
+}
+.login:hover{
+    border: none;
+    background-color: rgba(255, 192, 203, 0.425);
+    color: white;
+}
+
+
+/* index styling*/
+section{
+    margin: 50px 0;
+    padding: 50px;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-cont{
+    height: 350px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myPic{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.content-header{
+    font-size: 2.5rem;
+}
+
+.content-text{
+    font-size: 1.5rem;
+}
+
+.content{
+    margin-left: 40px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header{
+        display: block;
+    }
+
+    .open{
+        display: block;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    ul{
+        display: block;
+    }
+
+    section{
+        padding: 5px;
+    }
+
+    .intro{
+        flex-direction: column;
+    }
+
+    .content{
+        margin-left: 0px;
+    }
+    .myPic{
+        width: 40%;
+    }
+}
