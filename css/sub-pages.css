@@ -226,6 +226,13 @@ video{
     text-align: center;
 }
 
+.to-email{
+    margin-top: 10px;
+    color: yellow;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 @media screen and (max-length: 800px) {
     video{
